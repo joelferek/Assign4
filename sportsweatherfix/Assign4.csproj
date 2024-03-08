@@ -8,15 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\about-us.cshtml.cs" />
     <Compile Remove="Pages\Error.cshtml.cs" />
-    <Compile Remove="Pages\Index.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\about-us.cshtml" />
     <Content Remove="Pages\Error.cshtml" />
-    <Content Remove="Pages\Index.cshtml" />
   </ItemGroup>
 
 	<ItemGroup>
