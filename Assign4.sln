@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assign4", "sportsweatherfix\Assign4.csproj", "{15251FA1-0120-4DC8-B0B3-91B78B43ACE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assign4api1", "Assign4api1\Assign4api1.csproj", "{D5BD202F-7128-4BB0-899A-35019DADEEE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15251FA1-0120-4DC8-B0B3-91B78B43ACE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15251FA1-0120-4DC8-B0B3-91B78B43ACE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15251FA1-0120-4DC8-B0B3-91B78B43ACE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15251FA1-0120-4DC8-B0B3-91B78B43ACE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BD202F-7128-4BB0-899A-35019DADEEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BD202F-7128-4BB0-899A-35019DADEEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BD202F-7128-4BB0-899A-35019DADEEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BD202F-7128-4BB0-899A-35019DADEEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F164AE1F-BB01-4634-AF47-447998A84015}
+	EndGlobalSection
+EndGlobal

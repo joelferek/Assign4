@@ -1,0 +1,14 @@
+﻿@page
+@model Assign4.Pages.EventModel
+@{
+    var CityName = HttpContext.Request.Query["CityName"];
+}
+}
+
+<h2 id="EventID" style="visibility: hidden;"></h2>
+<div id="EventName" style="visibility: hidden;"></div>
+<div id="EventPrice" style="visibility: hidden;"></div>
+
+<script type="module"> 
+    displayCityEvents(@CityName)
+</script>
