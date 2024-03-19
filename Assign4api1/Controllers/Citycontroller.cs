@@ -13,10 +13,10 @@ namespace Assign4api1.Controllers
         {
             this.cityEvents = cityEvents;
         }
-        [HttpGet("{CityName}")]
-        public async Task<List<Event>> GetEvents(string CityName)
+        [HttpGet("{CityID}")]
+        public async Task<List<Event>> GetEvents(string CityID)
         {
-            var citydetails = await cityEvents.GetEvents(CityName);
+            var citydetails = await cityEvents.GetEvents(CityID);
             if (citydetails == null)
             {
                 //return NotFound();

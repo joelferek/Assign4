@@ -5,6 +5,6 @@ namespace Assign4api1.Repositories
     public interface ICityEvents
     {
 
-        public Task<List<Event>> GetEvents(string CityName);
+        public Task<List<Event>> GetEvents(string CityID);
     }
 }

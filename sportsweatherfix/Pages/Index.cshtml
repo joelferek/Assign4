@@ -4,7 +4,31 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body>
+    <div class="app-wrap">
+        <header>
+            <a href="Additions">Future Additions</a>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for an NFL city..." onkeypress="setQuery()" />
+            <a href="about-us">About Us</a><br>
+
+
+        </header>
+        <main>
+            <div class="temp-heading">Average Temp: </div>
+            <div class="price-heading">Average Price: </div>
+            <section class="location">
+                <div class="city">New York, US</div>
+                <div class="date">Wednesday 22 July 2020</div>
+            </section>
+            <div class="current">
+                <div class="temp">59<span>°F</span></div>
+                <div class="weather">Sunny</div>
+                <div class="hi-low">55°F / 61°F</div>
+            </div>
+    </div>
+    <input type="text" autocomplete="off" class="CityID" placeholder="CityID to see other activities" onkeypress="setQuery()" />
+    </main>
+    </div>
+    <script src="js/site.js"></script>
+</body>
+</html>

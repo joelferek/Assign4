@@ -12,10 +12,10 @@ namespace Assign4api1.Repositories
         {
             _dbcontextClass = dbcontextClass;
         }
-        public async Task<List<Event>> GetEvents(string CityName)
+        public async Task<List<Event>> GetEvents(string CityID)
         {
-            var param = new SqlParameter("@CityName", CityName);
-            var cityevents = await Task.Run(() => _dbcontextClass.Event.FromSqlRaw("exec GetEventsByCityName @CityName", param).ToListAsync());
+            var param = new SqlParameter("@CityID", CityID);
+            var cityevents = await Task.Run(() => _dbcontextClass.Event.FromSqlRaw("exec GetEventsByCityID @CityID", param).ToListAsync());
             return cityevents;
 
         }

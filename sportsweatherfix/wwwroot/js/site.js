@@ -6,6 +6,9 @@
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
+const CityID = document.querySelector('CityID');
+searchbox.addEventListener('keypress', setQuery2);
+
 const teamsData = {
     "las vegas": 153.47,
     "san francisco": 144.81,
@@ -74,9 +77,19 @@ const avgTemp = {
 function goToAboutUs() {
     window.location.href = "about-us";
 }
-
+function goToAdditions() {
+    window.location.href = "Additions";
+}
 
 function setQuery(evt) {
+    if (evt.keyCode == 13) {
+        getResults(searchbox.value);
+        getAveragePrice(searchbox.value);
+        getAveragetemp(searchbox.value);
+    }
+}
+
+function setQuery2(evt) {
     if (evt.keyCode == 13) {
         getResults(searchbox.value);
         getAveragePrice(searchbox.value);
@@ -141,8 +154,8 @@ function dateBuilder(d) {
     return `${day} ${date} ${month} ${year}`;
 }
 
-async function displayCityEvents(CityName) {
-    const response = await fetch(`https://localhost:7063/appi/City${CityName}`);
+async function displayCityEvents(CityID) {
+    const response = await fetch(`https://localhost:7063/api/City/${CityID}`);
     const data = await response.json();
     document.getElementById('EventID').innerHTML = data[0].eventID;
     document.getElementById('EventID').style.visibility = "visible";
