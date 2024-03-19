@@ -159,5 +159,8 @@ async function displayCityEvents(CityID) {
     const data = await response.json();
     document.getElementById('EventID').innerHTML = data[0].eventID;
     document.getElementById('EventID').style.visibility = "visible";
-
+    document.getElementById('EventName').innerHTML = data[0].eventName;
+    document.getElementById('EventName').style.visibility = "visible";
+    document.getElementById('EventPrice').innerHTML = data[0].eventPrice;
+    document.getElementById('EventPrice').style.visibility = "visible";
 }

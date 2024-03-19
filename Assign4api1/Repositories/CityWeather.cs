@@ -5,20 +5,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Assign4api1.Repositories
 {
-    public class CityEvents : ICityEvents
+    public class CityWeather : ICityWeather
     {
         private readonly DbcontextClass _dbcontextClass;
-        public CityEvents(DbcontextClass dbcontextClass)
+        public CityWeather(DbcontextClass dbcontextClass)
         {
             _dbcontextClass = dbcontextClass;
         }
-        public async Task<List<Event>> GetEvents(string CityID)
+        public async Task<List<City>> GetWeather(string CityID)
         {
             var param = new SqlParameter("@CityID", CityID);
-            var cityevents = await Task.Run(() => _dbcontextClass.Event.FromSqlRaw("exec GetEventsByCityID @CityID", param).ToListAsync());
-            return cityevents;
+            var cityweather = await Task.Run(() => _dbcontextClass.City.FromSqlRaw("exec GetCityAndEventDetails @CityID", param).ToListAsync());
+            return cityweather;
 
         }
-       
+
     }
 }

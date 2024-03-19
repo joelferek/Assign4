@@ -6,17 +6,17 @@ namespace Assign4api1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Citycontroller : Controller
+    public class cityweatherController : Controller
     {
-        private readonly ICityEvents cityEvents;
-        public Citycontroller(ICityEvents cityEvents)
+        private readonly ICityWeather CityWeather;
+        public cityweatherController(ICityWeather CityWeather)
         {
-            this.cityEvents = cityEvents;
+            this.CityWeather = CityWeather;
         }
         [HttpGet("{CityID}")]
-        public async Task<List<Event>> GetEvents(string CityID)
+        public async Task<List<City>> GetWeather(string CityID)
         {
-            var citydetails = await cityEvents.GetEvents(CityID);
+            var citydetails = await CityWeather.GetWeather(CityID);
             if (citydetails == null)
             {
                 //return NotFound();
@@ -24,8 +24,8 @@ namespace Assign4api1.Controllers
             return citydetails;
         }
 
-        }
     }
-       
+}
+
 
 
