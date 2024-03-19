@@ -3,10 +3,6 @@
 ## Overview
 
 This application is designed to enhance users' experiences by providing tailored information based on their location. Users input their location, and the app retrieves relevant details such as upcoming sporting events with ticket prices, ski lift information for nearby resorts, zoo ticket prices and special exhibits, amusement park details including ride ticket prices, and current weather conditions. By integrating with various APIs and databases, the app offers a seamless interface for users to access this information, empowering them to make informed decisions and maximize enjoyment during their time in the city.
-## Features
-
-- **Data-Driven Pricing:** Dynamic adjustment of ticket prices based on real-time weather data.
-- **Optimized Strategies:** Strategies to maximize attendance and revenue under different weather conditions.
 
 ## Pages
 
