@@ -18,7 +18,7 @@ This application is designed to enhance users' experiences by providing tailored
 - **City Activities API:** My first API shows activities available in the city that you choose. This is convenient because our application's purpose is to give people things to do based on the weather.
 - **Average Weather API:** My second API shows the average weather per city. This can be a useful device to be able to tell which city you would like to visit. Depending on if certain weather conditions bother you or not.
 
-## References
+# References
 
 <body>
 
