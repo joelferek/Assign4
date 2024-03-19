@@ -77,7 +77,7 @@ You
 @{
     var CityID = HttpContext.Request.Query["CityID"];
 }
-<h1>Search Results</h1>
+
 <div id="GetEvents" style="visibility:hidden; "> </div>
 
 
