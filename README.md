@@ -10,13 +10,13 @@ This application is designed to enhance users' experiences by providing tailored
 2. **About Us:** The second page gives a quick summary of what we are (as a mock). We act as an up and coming business. It gives a description of what we do.
 3. **Additions:** Because we are a newer company/website, we have a page where we talk about what we plan to add or improve.
 4. **City Activities:** This page shows other activities available in the city that you choose. All that needs to be done is to enter the city ID, and it will redirect you to a page where it shows the activity.
-5. **Average Temperature:** This page shows the average temperature of the city that you choose. You enter the cityID and then it returns the average temperature.
+5. **City Info:** This page shows you all the info about that city of the cityID that you put in. If you put in the cities ID it will give you all the info stored about that city.
 6. **[Placeholder for Service Providers (SPs)]**
 
 ## Joel Ferek APIs
 
 - **City Activities API:** My first API shows activities available in the city that you choose. This is convenient because our application's purpose is to give people things to do based on the weather.
-- **Average Weather API:** My second API shows the average weather per city. This can be a useful device to be able to tell which city you would like to visit. Depending on if certain weather conditions bother you or not.
+- **Average Weather API:** My second API shows the all the details of the city that we have available. This is good for the user because it gives all the information possible.
 
 # References
 
