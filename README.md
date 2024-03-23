@@ -16,7 +16,7 @@ This application is designed to enhance users' experiences by providing tailored
 ## Joel Ferek APIs
 
 - **City Activities API:** My first API shows activities available in the city that you choose. This is convenient because our application's purpose is to give people things to do based on the weather.
-- **Average Weather API:** My second API shows the all the details of the city that we have available. This is good for the user because it gives all the information possible.
+- **City Info API:** My second API shows the all the details of the city that we have available. This is good for the user because it gives all the information possible.
 
 # References
 
