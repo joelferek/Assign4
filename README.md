@@ -11,7 +11,7 @@ This application is designed to enhance users' experiences by providing tailored
 3. **Additions:** Because we are a newer company/website, we have a page where we talk about what we plan to add or improve.
 4. **City Activities:** This page shows other activities available in the city that you choose. All that needs to be done is to enter the city ID, and it will redirect you to a page where it shows the activity.
 5. **City Info:** This page shows you all the info about that city of the cityID that you put in. If you put in the cities ID it will give you all the info stored about that city.
-6. **[Placeholder for Service Providers (SPs)]**
+6. **Events cost** See events that are cost friendly with you being able to filter events within a certain price range.
 
 ## Joel Ferek APIs
 
