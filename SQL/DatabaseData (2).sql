@@ -1,3 +1,6 @@
+use DatabaseCreation;
+GO
+
 INSERT INTO [dbo].[City] ([CityID], [CityName], [AvgTemp])
 VALUES
     (1, 'Las Vegas', '75'),
