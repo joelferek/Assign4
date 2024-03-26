@@ -12,6 +12,7 @@ namespace Assign4api1.Repositories
         {
             _dbcontextClass = dbcontextClass;
         }
+        //Joel Ferek 2nd API
         public async Task<List<City>> GetWeather(string CityID)
         {
             var param = new SqlParameter("@CityID", CityID);
