@@ -18,6 +18,10 @@ This application is designed to enhance users' experiences by providing tailored
 - **City Activities API:** My first API shows activities available in the city that you choose. This is convenient because our application's purpose is to give people things to do based on the weather.
 - **City Info API:** My second API shows the all the details of the city that we have available. This is good for the user because it gives all the information possible.
 
+## Samantha OLivio APIs
+- **Highest Event Count API:** My first API gathers data about the cities with the most events happening. This shows users what cities offer the most activities and things to do.
+- **Low Price Events API:** My second API finds the events that are the cheapest. This helps users find cost-friendly events near them.  
+
 # References
 
 <body>
