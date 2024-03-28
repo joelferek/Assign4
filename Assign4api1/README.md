@@ -122,4 +122,6 @@ You
 </body>
 </html>
 how could I make it so that when i search the city ID in the second input type on my index page that it gives teh results to the api that I made
-﻿
+
+Can you help me create a Events Controller for my API with my interfaces?
+
