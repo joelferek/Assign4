@@ -1,0 +1,11 @@
+﻿@page
+@model Assign4.Pages.City_infoModel
+@{
+}
+<form id="locationForm" action="/Info">
+    <input type="number" id="CityID" step="any" name="CityID" />
+    <input type="submit" id="submitBtn" value="Search" class="btn btn-primary" />
+</form>
+<button id="locBtn" onclick="getLocation()"><i class="fa fa-location-arrow"></i></button>
+
+<div id="results">

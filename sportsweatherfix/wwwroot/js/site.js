@@ -74,6 +74,8 @@ const avgTemp = {
     "cincinnati": 55,
     "jacksonville": 80
 }
+
+
 function goToAboutUs() {
     window.location.href = "about-us";
 }
@@ -86,6 +88,8 @@ function setQuery(evt) {
         getResults(searchbox.value);
         getAveragePrice(searchbox.value);
         getAveragetemp(searchbox.value);
+        getCityID(searchbox.value);
+    }
     }
 }
 
@@ -94,6 +98,8 @@ function setQuery2(evt) {
         getResults(searchbox.value);
         getAveragePrice(searchbox.value);
         getAveragetemp(searchbox.value);
+        getCityID(searchbox.value);
+
     }
 }
 
@@ -112,6 +118,7 @@ function getAveragetemp(city) {
     const mockPricetemp = { averagetemp: avgTemp[city.toLowerCase()] || "N/A" };
     displayAveragetemp(mockPricetemp);
 }
+
 function displayAveragePrice(priceData) {
     let averagePrice = priceData.averagePrice;
     let priceElement = document.querySelector('.price-heading');
@@ -120,7 +127,7 @@ function displayAveragePrice(priceData) {
 function displayAveragetemp(tempData) {
     let averagetemp = tempData.averagetemp;
     let tempElement = document.querySelector('.temp-heading');
-    tempElement.innerHTML = `Average Temp: ${averagetemp}<span>°F</span>`;
+  
 }
 
 
@@ -163,4 +170,26 @@ async function displayCityEvents(CityID) {
     document.getElementById('EventName').style.visibility = "visible";
     document.getElementById('EventPrice').innerHTML = data[0].eventPrice;
     document.getElementById('EventPrice').style.visibility = "visible";
+}
+async function displayCityInfo(CityID) {
+    const response = await fetch(`https://localhost:7063/api/cityweather/${CityID}`);
+    const data = await response.json();
+
+    document.getElementById('EventID').innerHTML = data[0].eventID;
+    document.getElementById('EventID').style.visibility = "visible";
+
+    document.getElementById('EventName').innerHTML = data[0].eventName;
+    document.getElementById('EventName').style.visibility = "visible";
+
+    document.getElementById('EventPrice').innerHTML = data[0].eventPrice;
+    document.getElementById('EventPrice').style.visibility = "visible";
+
+    document.getElementById('CityID').innerHTML = data[0].cityID;
+    document.getElementById('CityID').style.visibility = "visible";
+
+    document.getElementById('CityName').innerHTML = data[0].cityName;
+    document.getElementById('CityName').style.visibility = "visible";
+
+    document.getElementById('AvgTemp').innerHTML = data[0].avgTemp;
+    document.getElementById('AvgTemp').style.visibility = "visible";
 }

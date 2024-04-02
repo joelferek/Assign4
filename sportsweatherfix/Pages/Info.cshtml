@@ -1,0 +1,18 @@
+﻿@page
+@model Assign4.Pages.InfoModel
+@{
+    var CityID = HttpContext.Request.Query["CityID"];
+}
+
+<div class="Below displays the eventID, event name, price, cityID, city name, and the average temp">Below displays the eventID, event name, price, cityID, city name, and the average temp</div>
+
+<div id="EventID" style="visibility: visible;"></div>
+<div id="EventName" style="visibility: visible;"> </div>
+<div id="EventPrice" style="visibility: visible;"> </div>
+<div id="CityID" style="visibility: visible;"></div>
+<div id="CityName" style="visibility: visible;"></div>
+<div id="AvgTemp" style="visibility: visible;"></div>
+
+<script type="module">
+    displayCityInfo(@CityID)
+</script>
