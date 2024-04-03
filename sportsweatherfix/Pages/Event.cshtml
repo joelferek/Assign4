@@ -3,11 +3,10 @@
 @{
     var CityID = HttpContext.Request.Query["CityID"];
 }
-<div class="Below displays the eventID, event name, and price">The EventID, Event name, and Price</div>
 
-<div id="EventID" style="visibility: visible;"></div>
-<div id="EventName" style="visibility: visible;"> </div>
-<div id="EventPrice" style="visibility: visible;"> </div>
+<div id="EventID" style="visibility: hidden;"></div>
+<div id="EventName" style="visibility: hidden;"> </div>
+<div id="EventPrice" style="visibility: hidden;"> </div>
 
 <script type="module"> 
     displayCityEvents(@CityID)

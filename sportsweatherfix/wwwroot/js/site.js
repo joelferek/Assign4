@@ -6,8 +6,7 @@
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
-const CityID = document.querySelector('CityID');
-searchbox.addEventListener('keypress', setQuery2);
+
 
 const teamsData = {
     "las vegas": 153.47,
@@ -88,9 +87,8 @@ function setQuery(evt) {
         getResults(searchbox.value);
         getAveragePrice(searchbox.value);
         getAveragetemp(searchbox.value);
-        getCityID(searchbox.value);
     }
-    }
+    
 }
 
 function setQuery2(evt) {
@@ -98,7 +96,6 @@ function setQuery2(evt) {
         getResults(searchbox.value);
         getAveragePrice(searchbox.value);
         getAveragetemp(searchbox.value);
-        getCityID(searchbox.value);
 
     }
 }
@@ -127,7 +124,7 @@ function displayAveragePrice(priceData) {
 function displayAveragetemp(tempData) {
     let averagetemp = tempData.averagetemp;
     let tempElement = document.querySelector('.temp-heading');
-  
+    tempElement.innerHTML = `Average Temp: ${averagetemp}<span>°F</span>`;
 }
 
 
