@@ -4,6 +4,12 @@
 
 This application is designed to enhance users' experiences by providing tailored information based on their location. Users input their location, and the app retrieves relevant details such as upcoming sporting events with ticket prices, ski lift information for nearby resorts, zoo ticket prices and special exhibits, amusement park details including ride ticket prices, and current weather conditions. By integrating with various APIs and databases, the app offers a seamless interface for users to access this information, empowering them to make informed decisions and maximize enjoyment during their time in the city.
 
+# Deployment Guide
+## What steps should they take (creating the database, cloning the repository, etc.)?
+### You should open sql server, copy the the files in the SQL file, and then copy them into sql server and run each file individually. Then they should click code in Github and click "Open With Visual Studio". From there, they can run the program. Make sure to have the API and main project turned on to start both.
+
+## Where should they go for help if they run into errors?
+### They should post their error into CHATGPT if that does not work they should reach out to one of us to help figure out the problem.
 
 
 ## Joel Ferek Razor Pages
