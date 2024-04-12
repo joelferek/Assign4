@@ -15,8 +15,8 @@ This application is designed to enhance users' experiences by providing tailored
 ## Joel Ferek Razor Pages
 ### Both of my pages use my API's from the assignment before. You can access them by clicking each button at the bottom of the index page
 
-- **City Activities API:** My first Razor page shows activities available in the city that you choose. This is convenient because our application's purpose is to give people things to do based on the weather.
-- **City Info API:** My second Razor Page shows the all the details of the city that we have available. This is good for the user because it gives all the information possible.
+- **City Activities API:** My first Razor page shows activities available in the city that you choose. This is convenient because our application's purpose is to give people things to do based on the weather. You should input the CITYID and the output is the event.
+- **City Info API:** My second Razor Page shows the all the details of the city that we have available. This is good for the user because it gives all the information possible. You should input the CITYID and the output is the the city information.
 
 ## Samantha Olivio APIs
 - **Highest Event Count API:** My first API gathers data about the cities with the most events happening. This shows users what cities offer the most activities and things to do. Outputs include City and Event Count, while no inputs are required. 
