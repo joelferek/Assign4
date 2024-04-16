@@ -4,13 +4,19 @@
 
 This application is designed to enhance users' experiences by providing tailored information based on their location. Users input their location, and the app retrieves relevant details such as upcoming sporting events with ticket prices, ski lift information for nearby resorts, zoo ticket prices and special exhibits, amusement park details including ride ticket prices, and current weather conditions. By integrating with various APIs and databases, the app offers a seamless interface for users to access this information, empowering them to make informed decisions and maximize enjoyment during their time in the city.
 
+# Deployment Guide
+## What steps should they take (creating the database, cloning the repository, etc.)?
+### You should open sql server, copy the the files in the SQL file, and then copy them into sql server and run each file individually. The files should be run in order of Database Creation, DatabaseData, and then any of the Stored procedures in any order you may like. Then they should click code in Github and click "Open With Visual Studio". From there, they can run the program. Make sure to have the API and main project turned on to start both.
+
+## Where should they go for help if they run into errors?
+### They should post their error into CHATGPT if that does not work they should reach out to one of us to help figure out the problem.
 
 
 ## Joel Ferek Razor Pages
 ### Both of my pages use my API's from the assignment before. You can access them by clicking each button at the bottom of the index page
 
-- **City Activities API:** My first Razor page shows activities available in the city that you choose. This is convenient because our application's purpose is to give people things to do based on the weather.
-- **City Info API:** My second Razor Page shows the all the details of the city that we have available. This is good for the user because it gives all the information possible.
+- **City Activities API:** My first Razor page shows activities available in the city that you choose. This is convenient because our application's purpose is to give people things to do based on the weather. You should input the CITYID and the output is the event.
+- **City Info API:** My second Razor Page shows the all the details of the city that we have available. This is good for the user because it gives all the information possible. You should input the CITYID and the output is the the city information.
 
 ## Samantha Olivio APIs
 - **Highest Event Count API:** My first API gathers data about the cities with the most events happening. This shows users what cities offer the most activities and things to do. Outputs include City and Event Count, while no inputs are required. 
