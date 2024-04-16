@@ -8,15 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\EventsController.cs" />
-    <Compile Remove="Controllers\PopularCitycontroller.cs" />
-    <Compile Remove="Controllers\WeatherForecastController.cs" />
-    <Compile Remove="Repositories\bcAPIs.cs" />
-    <Compile Remove="Repositories\CityEventsI.cs" />
-    <Compile Remove="Repositories\EventsinCity.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
 	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
