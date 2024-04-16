@@ -6,7 +6,7 @@ This application is designed to enhance users' experiences by providing tailored
 
 # Deployment Guide
 ## What steps should they take (creating the database, cloning the repository, etc.)?
-### You should open sql server, copy the the files in the SQL file, and then copy them into sql server and run each file individually. Then they should click code in Github and click "Open With Visual Studio". From there, they can run the program. Make sure to have the API and main project turned on to start both.
+### You should open sql server, copy the the files in the SQL file, and then copy them into sql server and run each file individually. The files should be run in order of Database Creation, DatabaseData, and then any of the Stored procedures in any order you may like. Then they should click code in Github and click "Open With Visual Studio". From there, they can run the program. Make sure to have the API and main project turned on to start both.
 
 ## Where should they go for help if they run into errors?
 ### They should post their error into CHATGPT if that does not work they should reach out to one of us to help figure out the problem.
