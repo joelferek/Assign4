@@ -21,7 +21,11 @@ This application is designed to enhance users' experiences by providing tailored
 ## Samantha Olivio APIs
 - **Highest Event Count API:** My first API gathers data about the cities with the most events happening. This shows users what cities offer the most activities and things to do. Outputs include City and Event Count, while no inputs are required. 
 - **Low Price Events API:** My second API finds the events that are the cheapest. This helps users find cost-friendly events near them.  
-No inputs are required, outputs include Event and Event Price. 
+No inputs are required, outputs include Event and Event Price.
+
+## Brian Cox APIs
+- **Get Events by Name API:** This API shows events of a certain type like “Amusement Park”, or “Sporting Event” when searched for. This function allows the user to be able to see all of their options when they want to attend a certain type of event. The name and location details would be provided as output.
+- **Get Events List by Temp API:** The second API lists event information organized by the average temperature of the city they are in. This function allows the user to be able to see all of their options when they want to attend a certain type of event. The name and location details would be provided as output.
 # References
 
 <body>
